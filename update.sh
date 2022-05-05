@@ -1,6 +1,9 @@
 #!/bin/bash
 rm -rf static
 rm -rf index.html
+cd ../HIS/HIS-web
+npm run build:prod
+cd ../../HIS-web
 cp -r ../HIS/HIS-web/dist/* .
 
 rm -rf h5
